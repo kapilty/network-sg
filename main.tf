@@ -4,7 +4,6 @@ terraform {
     hostname     = "app.terraform.io"
     organization = "kaumudilimited"
     workspaces { prefix = "vpc-" }
-    token = "Nuje3UaUWZejfw.atlasv1.b8WyyU71sBblde95tWS6aQZIgEhHyKGTRBXr03XByBmoLjiqvJ8ZFfzi8DrizQgf2GA"
   }
 }
 
