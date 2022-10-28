@@ -35,6 +35,7 @@ jobs:
       - name: Terraform Init
         id: init
         run: |
+          export TF_LOG=debug
           export TF_WORKSPACE="prod"
           terraform init -input=false
           terraform workspace show
