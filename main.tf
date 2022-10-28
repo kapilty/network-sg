@@ -2,7 +2,7 @@ terraform {
   required_version = "~> 0.12"
   backend "remote" {
     hostname     = "app.terraform.io"
-    organization = "nitheeshp"
+    organization = "kaumudilimited"
     workspaces { prefix = "vpc-" }
   }
 }
@@ -13,7 +13,7 @@ provider "aws" {
 
 
 module "http_sg" {
-  source = "github.com/nitheesh86/terraform-modules/modules/sg"
+  source = "github.com/kapilty/terraform-modules/modules/sg"
 
   name        = "computed-http-sg"
   description = "Security group with HTTP port open for everyone, and HTTPS open just for the default security group"
